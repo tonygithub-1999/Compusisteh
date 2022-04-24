@@ -1,0 +1,81 @@
+<div class="backgroung_nav">
+  <h2 class="back_tittle">Contacto</h2>
+</div>
+
+<div class="contact">
+  <div class="container_header">
+    <div class="content_head location">
+      <div class="location_cont_circle">
+        <img src="../../assets/CONTACTO/iconLocation.png" alt="" class="content_head_img">
+      </div>
+      <h2 class="location_tittle">Ubicación</h2>
+      <span class="location_subtittle">7 Poniente # 849-E Col. El Riego</span>
+    </div>
+
+    <div class="content_head phone">
+      <div class="location_cont_circle">
+        <img src="../../assets/CONTACTO/iconPhone.png" alt="" class="content_head_img">
+      </div>
+      <h2 class="location_tittle">Teléfono</h2>
+      <span class="location_subtittle">01 (238) 382 86 69/ 382 98 57</span>
+    </div>
+
+    <div class="content_head email">
+      <div class="location_cont_circle">
+        <img src="../../assets/CONTACTO/iconEmail.png" alt="" class="content_head_img">
+      </div>
+      <h2 class="location_tittle">Email</h2>
+      <span class="location_subtittle">contacto@compusisteh.com</span>
+    </div>
+
+  </div>
+
+  <div class="contact_container after">
+    <!-- <p class="text_info">Direccion:7 Poniente # 849-E Col. El Riego </p>
+    <p class="text_info">Email: contacto@compusisteh.com</p>
+    <p class="text_info">Telefono: 01 (238) 382 86 69 </p>
+    <p class="text_info">Telefono: 01 (238) 382 98 57</p> -->
+    <div class="content_maps">
+      <agm-map [zoom]="17" [latitude]="lat" [longitude]="lng">
+        <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+      </agm-map>
+    </div>
+
+  </div>
+  <div class="contact_container before">
+    <div class="form_content">
+
+    <form  class="contact-form" (submit)="sendEmail($event)" id="formulario" onsubmit="javascript:document.form.reset();" >
+        <div class="top_row">
+          <div class="field_row">
+            <label for="" class="text_top"> Nombre</label>
+            <input type="text"   name="name" id="name"   required>
+            <label for="" class="text_bottom">Nombre</label>
+          </div>
+          <div class="field_row before">
+             <input type="text"  name="last" id="last"  required >
+            <label for="" class="text_bottom">Apellido</label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for=""> Email</label>
+         <input type="text"  name="email" id="email"   required>
+        </div>
+        <div class="field">
+          <label for=""> Teléfono </label>
+          <input type="text" name="phone" id="phone" maxlength="10" required>
+        </div>
+        <div class="textbox">
+          <label for=""> ¿Qué necesitas?</label>
+          <textarea type="text"  name="message" id="message" required></textarea>
+        </div>
+        <div class="form_button">
+          <input type="submit" value="Enviar" class="button_submit" onsubmit="this.reset()">
+        </div>
+      </form >
+
+    </div>
+  </div>
+
+</div>

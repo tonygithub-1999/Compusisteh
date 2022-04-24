@@ -1,0 +1,266 @@
+.section_home{
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+.container {
+  background: linear-gradient(to right, var(--secondary), var(--primary));
+  width: 100%;
+  height: 1100px;
+  position: relative;
+  overflow: hidden;
+
+}
+
+@media screen and (max-width: 858px) {
+  .container {
+    width: 100%;
+    height: 850px;
+  }
+
+  .container_info {
+    width: 100%;
+    height: 400px;
+    float: left;
+    display: block;
+    margin-top: 30px;
+    padding-top: 10px;
+  }
+
+  .container_tittle {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
+    margin-left: 30px;
+  }
+
+  .container_text {
+    color: #fff;
+    font-size: 16px;
+    margin-left: 30px;
+    margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
+  }
+
+  .btn_container {
+    text-align: center;
+    width: 30pxpx;
+    height: 15px;
+
+
+  }
+
+
+}
+
+@media screen and (max-width: 858px) {
+  .container_image{
+    margin-top: 100px;
+    display: none;
+
+
+  }
+
+  .container_img {
+    width: 30%;
+    height: 300px;
+
+  }
+}
+
+
+
+
+.segundo {
+  position: absolute;
+  background-color: transparent;
+  bottom: 0;
+  left: 0;
+  border-width: 30vh 100vw 0 0;
+  border-style: solid;
+  border-color: transparent #fff transparent transparent;
+
+}
+
+
+
+.container_info {
+  width: 60%;
+  height: 400px;
+  float: left;
+  display: block;
+  margin-top: 200px;
+  padding-top: 150px;
+
+}
+
+
+
+@media screen and (min-width: 1024px) {
+  .talk_end {
+    display: block;
+    color: #fff;
+    font-weight: bold;
+  }
+}
+
+.container_tittle {
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+  margin-left: 100px;
+  margin-block-start: 0.2em;
+  margin-block-end: 0.2em;
+  margin-left: 150px;
+}
+
+.container_text {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 100px;
+  margin-block-start: 0.2em;
+  margin-block-end: 0.2em;
+  margin-left: 150px;
+}
+
+.btn_container {
+  text-align: center;
+  width: 187px;
+  height: 60px;
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  border-style: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 0;
+  -webkit-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+  margin-left: 150px;
+  margin-top: 50px;
+  cursor: pointer;
+
+}
+
+/* .btn_container:hover{
+
+} */
+
+.container_image {
+  width: 40%;
+  height: 400px;
+  float: right;
+  display: block;
+  /* padding: 30px 0px 50px 60px; */
+  margin-top: 200px;
+
+}
+
+.container_img {
+  width: 100%;
+  height: 550px;
+}
+@media screen and (max-width: 680px) {
+  .card_container {
+    width: 100%;
+    height: auto;
+    overflow: scroll;
+    display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+  }
+  .card_info{
+    width: 700px;
+    height: 380px;
+
+  }
+  .card_info.letter {
+    margin-left: 0px;
+  }
+}
+
+.card_container {
+  width: 100%;
+  height: 450px;
+  margin-top: 30px;
+  padding: 65px;
+  justify-content: space-between;
+  align-content: center;
+
+}
+
+.card_info {
+  float: left;
+  display: block;
+  width: 260px;
+  height: 380px;
+  text-align: center;
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  /* border: 0.2px solid #000; */
+  border-radius: 15px;
+  padding: 20px;
+  color: #000;
+  -webkit-box-shadow: 0px 5px 27px -2px rgba(28, 77, 224, 0.39);
+  -moz-box-shadow: 0px 5px 27px -2px rgba(28, 77, 224, 0.39);
+  box-shadow: 0px 5px 27px -2px rgba(28, 77, 224, 0.39);
+}
+
+.card_info.letter {
+  margin-left: 54px;
+}
+
+.card_tittle {
+  margin-block-start: 0.4em;
+  margin-block-end: 0.4em;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card_text {
+  color: #fff;
+  font-size: 14px;
+
+}
+
+.card_text.parra {
+  text-align: justify;
+  margin-top: 20px;
+
+}
+
+
+
+/* ////////////////////////////////////////////// */
+/* @media only screen and  (max-width: 1100px){
+
+
+
+  .container_carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+  }
+  .card_container{
+    display: none;
+  }
+  .carousel-cell{
+    background: linear-gradient( to right, var(--primary),var(--secondary));
+    width: 260px;
+    height: 380px;
+    border-radius: 15px;
+    padding: 10px;
+    color: #fff;
+  }
+
+
+
+} */
+
+
+/* /////////////////////////////////////////////////// */
